@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: Georgia, serif;
+    color: #d8d3bd;
+  }
+  
+  .number {
+    font-family: Cambria, serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-primary text-text hover:bg-primary/90 transition-all duration-300;
+  }
+  
+  .input {
+    @apply w-full px-4 py-3 bg-black/50 border border-gray-800 rounded-lg text-text placeholder-text/50 focus:outline-none focus:border-primary;
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 15px theme('colors.primary');
+  }
+}
